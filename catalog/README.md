@@ -4,7 +4,10 @@
 
 | Дополнение | Для чего | Как подключить |
 | --- | --- | --- |
-| [nlm-skill](nlm-skill.md) | Работа с источниками и материалами NotebookLM в Codex | Официальная установка автора. MIT, содержимое сверено с `v0.16.6` |
+| [Browser и Computer Use](browser-computer-use.md) | Работа с веб-страницами и приложениями Windows | Настройка Edge и Any App с простыми проверками |
+| [GitHub](github.md) | Чтение репозиториев, задач и запросов на слияние | Подключение аккаунта и проверка доступа к репозиторию |
+| [Gmail](gmail.md) | Поиск и чтение почты в Codex | Необязательное подключение аккаунта с проверкой на учебном письме |
+| [nlm-skill](nlm-skill.md) | Работа с источниками и материалами NotebookLM в Codex | Официальная установка скилла и подключение MCP. MIT, содержимое сверено с `v0.16.6` |
 | Скиллы Codex | Готовые инструкции для задач с документами, кодом и другими материалами | [Официальный каталог скиллов Codex](https://github.com/openai/skills) |
 | [Family Tree Starter](https://github.com/KatariNa-codex/family-tree-starter) | Демонстрационный шаблон семейного древа с карточками, картой и журналом | [Отдельный форк](https://github.com/KatariNa-codex/family-tree-starter) с вымышленными данными · [MIT](https://github.com/KatariNa-codex/family-tree-starter/blob/main/LICENSE) · [Доработки](https://github.com/KatariNa-codex/family-tree-starter/blob/main/CHANGES.md) |
 
