@@ -18,6 +18,8 @@
 
 ## Скачать тематические наборы
 
+**[Интерфейсы и сайты](sites.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-sites-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-sites-1.0.0.zip.sha256)
+
 **[Презентации и мультимедиа](media.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-media-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-media-1.0.0.zip.sha256)
 
 **[Документы, PDF и таблицы](documents.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-documents-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-documents-1.0.0.zip.sha256)

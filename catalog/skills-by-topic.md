@@ -38,11 +38,11 @@
 ## Интерфейсы и сайты
 
 - **design-first** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/design-first)
-- **algorithmic-art** — [Исходник](https://github.com/anthropics/skills/tree/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/algorithmic-art)
-- **ui-ux-pro-max** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/ui-ux-pro-max)
-- **site-architecture** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/site-architecture)
+- **algorithmic-art** — [Workflow Kit](../skills/algorithmic-art/) · [Лицензия](../skills/algorithmic-art/LICENSE) · [Изменения](../skills/algorithmic-art/CHANGES.md)
+- **ui-ux-pro-max** — [Workflow Kit](../skills/ui-ux-pro-max/) · [Лицензия](../skills/ui-ux-pro-max/LICENSE) · [Изменения](../skills/ui-ux-pro-max/CHANGES.md)
+- **site-architecture** — [Workflow Kit](../skills/site-architecture/) · [Лицензия](../skills/site-architecture/LICENSE) · [Изменения](../skills/site-architecture/CHANGES.md)
 - **site-audit** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/site-audit)
-- **webapp-testing** — [Исходник](https://github.com/anthropics/skills/tree/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/webapp-testing)
+- **webapp-testing** — [Workflow Kit](../skills/webapp-testing/) · [Лицензия](../skills/webapp-testing/LICENSE) · [Изменения](../skills/webapp-testing/CHANGES.md)
 - **mermaid-tools** — [Workflow Kit](../skills/mermaid-tools/) · [Лицензия](../skills/mermaid-tools/LICENSE) · [Изменения](../skills/mermaid-tools/CHANGES.md)
 
 ## Исследования и работа с продуктом
