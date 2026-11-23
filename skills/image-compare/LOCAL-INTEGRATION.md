@@ -1,0 +1,3 @@
+Local checked edition: 2026-11-07. A guarded executable scripts/imgdiff.py is included; use it instead of recreating the unguarded upstream example. It refuses an existing --out path and any input path. This skill compares diagnostic test/reference images; it does not authorize retouching user images. For actual image creation/editing use the host imagegen workflow. Compare copies at equal scale, and distinguish intended changes from rendering noise. identical/SSIM refer to normalized comparison (white-flattened transparency and masks/resize); they do not prove original byte equality or visual quality. An --ignore mask also excludes padded pixels in this local copy.
+
+Set the absolute path to your project-local Python in scripts/local-runtime.json.

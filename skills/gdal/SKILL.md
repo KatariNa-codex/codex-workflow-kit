@@ -1,0 +1,492 @@
+---
+name: gdal
+description: "Process geospatial raster and vector files with GDAL/OGR command-line tools. Use when converting geodata, reprojecting rasters, mosaicking, clipping or inspecting raster metadata. Do NOT use for native CAD editing, legal boundary validation or installing a GIS stack."
+
+tags:
+  - gdal
+  - ogr
+  - cli
+  - raster
+  - vector
+  - conversion
+  - reprojection
+  - gis
+  - geospatial
+---
+
+## Local host rules (installation adaptation 2026-11-07)
+System/developer instructions, current AGENTS, POLICY, HANDOFF and memory-kit take precedence over examples here. Existing authorization persists; do not add redundant approval questions. Examples do not authorize installing applications, global packages, changing PATH/settings/trust, delegating, publishing, using paid APIs, uploading private material or modifying source projects. Use Windows PowerShell syntax and the actual discovered interpreter; keep outputs in a fresh task directory and never overwrite originals by default. Verify current official documentation/version before relying on dated version or product claims. Use available host tools for browser/UI work; these examples cannot bypass host tool rules. No automatic sibling-skill installation.
+GIS: preserve declared CRS, axis order, units and source provenance; never infer an unknown local CRS. Assigning CRS does not transform coordinates. Synthetic smoke tests do not establish cadastral/legal correctness. Network grids, geocoding, tiles and databases need task authorization; avoid network by default. CAD DWG/DXF inspection and editing remain with cad-drawings and project rules; geometric primitives remain with shapely.
+
+> **项目地址：** <https://github.com/OSGeo/gdal>
+>
+> **官方文档：** <https://gdal.org/en/latest/>
+>
+> **源码命令文档：** <https://gdal.org/en/latest/programs/>
+>
+> **最新版本：** 3.13.3（截至 2026-10，[下载页](https://gdal.org/download.html)）
+>
+> **许可证：** MIT
+
+## 概述
+
+GDAL 是地理空间数据处理的事实标准库。它提供了 **50+ 个命令行工具**，分为两大类：
+
+- **OGR 工具**（开放地理数据模型）：处理矢量数据（点、线、面）
+- **GDAL 工具**：处理栅格数据（卫星影像、DEM、栅格地图）
+
+---
+
+## 环境准备
+
+### 前置条件
+
+部分 Linux 发行版与 GIS 软件栈会预装 GDAL（QGIS、PostGIS 客户端等），先用下面的命令确认工具在 `PATH` 中：
+
+```bash
+gdalinfo --version   # 验证 GDAL 版本
+ogrinfo --version    # 验证 OGR 版本
+```
+
+### 安装方法
+
+#### Linux (Debian/Ubuntu)
+
+```bash
+apt-get update
+apt-get install gdal-bin python3-gdal
+```
+
+#### Linux (CentOS/RHEL)
+
+```bash
+yum install gdal gdal-devel
+```
+
+#### macOS (Homebrew)
+
+```bash
+brew install gdal
+```
+
+#### Conda
+
+```bash
+conda install -c conda-forge gdal
+```
+
+#### Docker
+
+Docker Hub 上的 `osgeo/gdal` 已迁移（该镜像最后一次更新为 2023 年），现由 GHCR 发布：
+
+```bash
+docker run --rm -it ghcr.io/osgeo/gdal:latest bash
+```
+
+### Python 绑定（可选）
+
+某些 GDAL 工具（如 `gdal_calc`, `gdal_merge`, `gdal_grid`, `gdal_polygonize`）是 Python 脚本，需要安装 Python 绑定：
+
+```bash
+pip install GDAL
+# 或
+conda install -c conda-forge gdal
+```
+
+---
+
+## 核心命令结构
+
+### 新式 CLI (GDAL 3.11+)
+
+GDAL 3.11 引入了统一的 `gdal` 命令行入口（官方文档标注 "Added in version 3.11"；最新稳定版 **3.13.3**，2026-08-18 发布，见 [下载页](https://gdal.org/download.html)），后续版本持续加入 `gdal vector concave-hull/convex-hull/dissolve/sort` 等子命令，`gdal dataset check` 自 3.13 起提供：
+
+```bash
+gdal <command> <subcommand> [options] <inputs>
+```
+
+主要命令：
+- `gdal info` — 获取数据信息（自动检测栅格或矢量，等价 `gdal raster info` / `gdal vector info`）
+- `gdal vector` — 矢量操作入口（`convert`、`reproject`、`clip`、`buffer`、`dissolve`、`make-valid`、`sql` 等）
+- `gdal raster` — 栅格操作入口（`convert`、`reproject`、`mosaic`、`clip`、`calc`、`contour` 等）
+- `gdal dataset` — 数据集管理（`check`、`copy`、`rename`、`delete`、`identify`）
+- `gdal pipeline` — 把多个步骤串成一条命令
+
+```bash
+# 矢量重投影 + 格式转换（等价 ogr2ogr -t_srs ... -f GPKG）
+gdal vector reproject --output-crs EPSG:3857 -o out.gpkg in.shp
+
+# 栅格镶嵌（等价 gdal_merge.py / gdalwarp 多输入）
+gdal raster mosaic -o mosaic.tif tile1.tif tile2.tif tile3.tif
+
+# 数据集体检（3.13+）
+gdal dataset check data.gpkg
+```
+
+### 传统 CLI（广泛使用）
+
+```bash
+ogrinfo <datasource> [layer]
+ogr2ogr <output> <input> [options]
+gdalinfo <raster_file>
+gdal_translate <input> <output> [options]
+gdalwarp <input> <output> [options]
+```
+
+---
+
+## 矢量数据工具（OGR）
+
+> 完整参数表和高级示例见 [reference/vector-tools.md](reference/vector-tools.md)
+
+### ogrinfo — 矢量数据信息查询
+
+```bash
+# 列出所有图层
+ogrinfo mydata.shp
+
+# 获取特定图层摘要
+ogrinfo mydata.shp layername -so
+
+# JSON 格式输出（GDAL 3.7+）
+ogrinfo -json mydata.shp
+
+# 显示所有要素及其属性
+ogrinfo -al -geom=YES mydata.shp
+
+# 按属性过滤
+ogrinfo mydata.shp -where "AREA > 1000"
+```
+
+### ogr2ogr — 矢量数据格式转换和处理
+
+```bash
+# 格式转换（Shapefile → GeoJSON）
+ogr2ogr output.geojson input.shp
+
+# 指定输出格式（Shapefile → GeoPackage）
+ogr2ogr -f GPKG output.gpkg input.shp
+
+# 重投影（WGS84 → Web Mercator）
+ogr2ogr -t_srs EPSG:3857 output.shp input.shp
+
+# 属性过滤
+ogr2ogr output.shp input.shp -where "area > 1000"
+
+# 选择特定字段
+ogr2ogr output.shp input.shp -select "id,name,geometry"
+```
+
+---
+
+## 栅格数据工具（GDAL）
+
+> 完整参数表和高级用法见 [reference/raster-tools.md](reference/raster-tools.md)
+
+### gdalinfo — 栅格数据信息查询
+
+```bash
+# 基本信息
+gdalinfo dem.tif
+
+# JSON 输出
+gdalinfo -json dem.tif
+
+# 显示统计信息
+gdalinfo -stats dem.tif
+```
+
+### gdal_translate — 栅格格式转换和重采样
+
+```bash
+# 格式转换（GeoTIFF → PNG）
+gdal_translate input.tif output.png
+
+# 格式转换（带压缩）
+gdal_translate -co COMPRESS=DEFLATE input.tif output.tif
+
+# 重采样（降低分辨率）
+gdal_translate -outsize 50% 50% input.tif output.tif
+
+# 裁剪到范围
+gdal_translate -projwin -180 90 -170 80 input.tif output.tif
+```
+
+### COG / 云优化 GeoTIFF
+
+COG 是带内部金字塔和分块的 GeoTIFF，便于 HTTP Range 按需读取（S3、对象存储、静态服务器）：
+
+```bash
+# GeoTIFF → COG（压缩 + 金字塔一次生成）
+gdal_translate -of COG -co COMPRESS=DEFLATE -co OVERVIEWS=AUTO input.tif output_cog.tif
+
+# 3.11+ 新式 CLI 等价写法
+gdal raster convert --of COG -o output_cog.tif input.tif
+
+# 校验：分块、金字塔、是否被识别为 COG
+gdalinfo -json output_cog.tif | grep -E 'COMPRESSION|LAYOUT|BLOCK'
+```
+
+### gdalwarp — 栅格重投影和镶嵌
+
+```bash
+# 重投影（UTM 50N → WGS84）
+gdalwarp -t_srs EPSG:4326 input_utm.tif output_wgs84.tif
+
+# 镶嵌多个文件
+gdalwarp input1.tif input2.tif input3.tif output_mosaic.tif
+
+# 重采样并重投影
+gdalwarp -tr 30 30 -t_srs EPSG:4326 input.tif output.tif
+
+# 用矢量边界裁剪
+gdalwarp -cutline clip_boundary.shp -crop_to_cutline input.tif output.tif
+```
+
+### gdal_merge.py — 栅格镶嵌融合
+
+```bash
+# 基本合并
+gdal_merge.py -o output.tif input1.tif input2.tif input3.tif
+
+# 分离波段（创建多波段文件）
+gdal_merge.py -separate -o rgb.tif r.tif g.tif b.tif
+```
+
+### gdal_calc.py — 栅格计算器
+
+```bash
+# 两个栅格平均
+gdal_calc.py -A input1.tif -B input2.tif --calc="(A+B)/2" --outfile=mean.tif
+
+# 计算 NDVI（植被指数）
+gdal_calc.py -A nir.tif -B red.tif \
+  --calc="(A-B)/(A+B)" --outfile=ndvi.tif
+```
+
+### gdal_contour — 等值线提取
+
+```bash
+# 提取等高线（10 米间隔）
+gdal_contour -a elevation dem.tif contours.shp -i 10
+
+# 输出为 GeoJSON
+gdal_contour -f GeoJSON dem.tif contours.geojson -i 50
+```
+
+### gdal_grid — 从散点数据创建网格
+
+```bash
+# 基本网格化（使用平均值）
+gdal_grid -a average input_points.shp output_dem.tif
+
+# 反距离加权（IDW）插值
+gdal_grid -a invdist:power=2:smoothing=0 input_points.shp output_dem.tif
+```
+
+### gdal_polygonize.py — 栅格转矢量
+
+```bash
+# 基本转换
+gdal_polygonize.py input.tif output.shp
+
+# 指定输出格式
+gdal_polygonize.py input.tif -f GeoJSON output.geojson
+```
+
+### gdaltindex — 创建栅格瓦片索引
+
+```bash
+# 基本索引
+gdaltindex index.shp *.tif
+
+# 输出为 GeoPackage
+gdaltindex -of GPKG index.gpkg *.tif
+```
+
+### gdal_edit.py — 编辑栅格元数据
+
+```bash
+# 设置坐标参考系
+gdal_edit.py -a_srs EPSG:4326 input.tif
+
+# 设置 NoData 值
+gdal_edit.py -a_nodata 0 input.tif
+```
+
+### nearblack — 清理黑白边界
+
+```bash
+# 清理黑色边界（默认）
+nearblack input.tif -o output.tif
+
+# 搜索白色边界
+nearblack -white input.tif -o output.tif
+```
+
+---
+
+## 常用环境变量和配置
+
+### GDAL 环境变量
+
+| 变量 | 说明 | 示例 |
+|------|------|------|
+| `GDAL_DATA` | GDAL 数据文件目录 | `/usr/share/gdal/` |
+| `PROJ_LIB` | PROJ 数据文件目录 | `/usr/share/proj/` |
+| `CPL_DEBUG` | 调试日志级别 | `ON` / `OFF` |
+| `GDAL_CACHEMAX` | 块缓存大小（MB） | `512` |
+| `GDAL_NUM_THREADS` | 线程数 | `4` / `ALL_CPUS` |
+| `GDAL_DISABLE_READDIR_ON_OPEN` | 禁用目录读取 | `YES` |
+| `GDAL_HTTP_TIMEOUT` | HTTP 超时（秒） | `30` |
+| `GDAL_HTTP_MAX_RETRY` | HTTP 重试次数 | `3` |
+| `CPL_VSIL_CURL_ALLOWED_EXTENSIONS` | 允许的远程文件扩展名 | `.tif,.tiff,.vrt` |
+| `AWS_ACCESS_KEY_ID` | AWS 密钥 ID | 用于 S3 访问 |
+| `AWS_SECRET_ACCESS_KEY` | AWS 密钥 | 用于 S3 访问 |
+| `GOOGLE_APPLICATION_CREDENTIALS` | Google Cloud 凭证文件 | `/path/to/credentials.json` |
+
+### 使用环境变量
+
+```bash
+# 启用多线程处理
+export GDAL_NUM_THREADS=ALL_CPUS
+
+# 增加块缓存
+export GDAL_CACHEMAX=1024
+
+# 启用调试
+export CPL_DEBUG=ON
+
+# 访问 S3 上的栅格
+export AWS_ACCESS_KEY_ID=xxxxx
+export AWS_SECRET_ACCESS_KEY=xxxxx
+gdalinfo /vsis3/bucket/key.tif
+
+# 运行命令
+gdalwarp input.tif output.tif
+```
+
+---
+
+## 数据格式支持
+
+常用矢量 / 栅格格式与扩展名对照见 [reference/data-formats.md](reference/data-formats.md)。
+
+---
+
+## 典型工作流：常见使用模式
+
+### 模式 1: 批量格式转换
+
+```bash
+#!/bin/bash
+# 将目录内所有 Shapefile 转换为 GeoJSON
+
+for shp in *.shp; do
+  base="${shp%.shp}"
+  ogr2ogr -f GeoJSON "$base.geojson" "$shp"
+done
+```
+
+### 模式 2: 批量重投影
+
+```bash
+#!/bin/bash
+# 重投影所有 GeoTIFF 为 Web Mercator (EPSG:3857)
+
+for tif in *.tif; do
+  base="${tif%.tif}"
+  gdalwarp -t_srs EPSG:3857 "$tif" "${base}_3857.tif"
+done
+```
+
+### 模式 3: 创建 DEM 等值线
+
+```bash
+#!/bin/bash
+# 从 DEM 提取等高线（10 米间隔）
+
+gdal_contour -a elev dem.tif -i 10 contours.shp
+
+# 转换为 GeoJSON
+ogr2ogr -f GeoJSON contours.geojson contours.shp
+```
+
+### 模式 4: 计算 NDVI
+
+```bash
+#!/bin/bash
+# 从多光谱影像计算 NDVI
+
+gdal_calc.py \
+  -A nir_band.tif \
+  -B red_band.tif \
+  --calc="(A-B)/(A+B)" \
+  --outfile=ndvi.tif
+```
+
+### 模式 5: 镶嵌和重投影
+
+```bash
+#!/bin/bash
+# 合并多个影像并重投影到 WGS84
+
+gdalwarp -t_srs EPSG:4326 \
+  image1.tif image2.tif image3.tif \
+  output_mosaic_wgs84.tif
+```
+
+### 模式 6: 创建栅格瓦片索引
+
+```bash
+#!/bin/bash
+# 为目录内所有 GeoTIFF 创建索引
+
+gdaltindex -recursive -of GPKG \
+  tile_index.gpkg /path/to/rasters/
+```
+
+---
+
+## 常见问题
+
+| 问题 | 解决 |
+|------|------|
+| `gdalinfo` 提示 `ERROR 4: file not recognized` | 确认文件格式与扩展名匹配，必要时用 `gdalinfo --formats` 检查驱动是否可用 |
+| Python 工具（`gdal_calc.py` 等）找不到 | 这些是 Python 脚本，需安装 Python 绑定（`pip install GDAL` 或 conda） |
+| `pip install GDAL` 编译失败 | 版本需与本机 GDAL 库匹配，推荐 `conda install -c conda-forge gdal` |
+| 重投影后数据错位 | 核对源坐标系（`-s_srs`）与目标坐标系（`-t_srs`），GDAL 3+ 默认按 EPSG 轴序处理 |
+| 中文路径 / 属性乱码 | 确认系统编码，Shapefile 用 `-lco ENCODING=UTF-8` 输出 |
+| 大文件处理内存不足 | 设置 `GDAL_CACHEMAX`、使用 `-wm` 分块，避免一次镶嵌全部文件 |
+| 就地修改文件损坏 | `gdal_edit.py` 等会直接改写文件，操作前先备份 |
+| S3/HTTP 远程数据读取失败 | 检查 `/vsis3/` 凭证、`GDAL_HTTP_TIMEOUT`、`CPL_VSIL_CURL_ALLOWED_EXTENSIONS` |
+
+---
+
+## AI 使用建议
+
+- **本技能的组织**：主文件给高频用法，完整参数表与高级示例在 `reference/data-formats.md`、`reference/raster-tools.md`、`reference/vector-tools.md`，需要时再展开；示例工程与生成的数据写到工作目录，不要改动技能目录本身。
+- **执行环境**：命令在终端 / shell 中执行（Windows 用 PowerShell）。正文的 `apt-get`、`sudo`、`export VAR=` 是 Bash 写法：Windows 改为 `$env:GDAL_NUM_THREADS = "ALL_CPUS"`，无 `sudo`/`apt` 时改用 conda-forge 或 `docker run --rm -v "${PWD}:/data" -w /data ghcr.io/osgeo/gdal:latest ...`。
+- **先探测版本**：`gdalinfo --version`、`ogrinfo --version`；本技能按 GDAL 3.13.3 编写，低于 3.11 没有 `gdal <command>` 新式 CLI（`gdal vector`/`gdal raster`），须退回 `ogr2ogr`/`gdalwarp`；`gdal dataset check` 需 3.13+，且 `gdal_calc.py` 等脚本工具还需要 Python 绑定。
+- **验证产物**：栅格用 `gdalinfo -json out.tif` 核对 `driverShortName`、`size`、`coordinateSystem.wkt`、`bands[].noDataValue`；矢量用 `ogrinfo -so out.shp layer`（或 `ogrinfo -json out.gpkg`）核对 `Feature Count`、`Geometry`、字段列表；不要只凭退出码报告成功。
+- **先看错误再改参数**：`ERROR 4: ... not recognized as a supported file format` 先查路径与 `gdalinfo --formats`；`--debug on` 或 `CPL_DEBUG=ON` 看驱动细节；输出很长时重定向到文件再分段读取，不要一次打印全文。
+- **批处理与中间产物**：批量循环建议用 Python 生成命令，中间结果用 `gdalbuildvrt` 写 `.vrt` 而不是反复 `gdalwarp`；耗时命令放后台运行，避免一次重投影全部数据。
+- **安全与权限**：`gdal_edit.py`、`ogr2ogr` 写已有目标、`-overwrite`/`-append` 会就地改写或覆盖数据，先备份或换输出名；安装 GDAL、改 `GDAL_DATA`/`PROJ_LIB`、访问 `/vsis3/`（需 `AWS_SECRET_ACCESS_KEY`）前先征得用户同意，回答里不要回显密钥。
+
+---
+
+## 相关技能
+
+- **gdal-api** — GDAL 编程 API（C/C++/Python/.NET）：[../gdal-api/SKILL.md](https://github.com/znlgis/opengis-skills/blob/6562616dd88baaa102b03683b4e210e16fa35a38/gis/gdal-api/SKILL.md)
+- **qgis-process** — QGIS 命令行批处理：[../qgis-process/SKILL.md](../qgis-process/SKILL.md)
+- **pyqgis** — QGIS Python 二次开发：[../pyqgis/SKILL.md](../pyqgis/SKILL.md)
+- **geopandas** — Python 矢量数据处理（底层依赖 GDAL）：[../geopandas/SKILL.md](../geopandas/SKILL.md)
+- **postgis** — PostgreSQL 空间数据库：[../postgis/SKILL.md](https://github.com/znlgis/opengis-skills/blob/6562616dd88baaa102b03683b4e210e16fa35a38/gis/postgis/SKILL.md)
+- **opengis-all** — 一站式 GIS 全流程：[../opengis-all/SKILL.md](https://github.com/znlgis/opengis-skills/blob/6562616dd88baaa102b03683b4e210e16fa35a38/gis/opengis-all/SKILL.md)
+
+## 参考资源
+
+- **官方文档与资源：** <https://gdal.org/> | [命令行工具](https://gdal.org/en/latest/programs/) | [API](https://gdal.org/api/) | [GitHub](https://github.com/OSGeo/gdal)
+- **矢量工具详细参考：** [reference/vector-tools.md](reference/vector-tools.md)
+- **栅格工具详细参考：** [reference/raster-tools.md](reference/raster-tools.md)
+- **数据格式对照：** [reference/data-formats.md](reference/data-formats.md)

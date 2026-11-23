@@ -8,14 +8,14 @@
 ## Чертежи и карты
 
 - **cad-drawings** — [Workflow Kit](../skills/cad-drawings/) · [Лицензия](../skills/cad-drawings/LICENSE) · [Изменения](../skills/cad-drawings/CHANGES.md)
-- **gdal** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/gdal)
-- **geopandas** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/geopandas)
-- **leaflet** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/leaflet)
-- **proj** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/proj)
+- **gdal** — [Workflow Kit](../skills/gdal/) · [Лицензия](../skills/gdal/LICENSE) · [Изменения](../skills/gdal/CHANGES.md)
+- **geopandas** — [Workflow Kit](../skills/geopandas/) · [Лицензия](../skills/geopandas/LICENSE) · [Изменения](../skills/geopandas/CHANGES.md)
+- **leaflet** — [Workflow Kit](../skills/leaflet/) · [Лицензия](../skills/leaflet/LICENSE) · [Изменения](../skills/leaflet/CHANGES.md)
+- **proj** — [Workflow Kit](../skills/proj/) · [Лицензия](../skills/proj/LICENSE) · [Изменения](../skills/proj/CHANGES.md)
 - **pyqgis** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/pyqgis)
 - **qgis-process** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/qgis-process)
-- **shapely** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/shapely)
-- **image-compare** — [Исходник](https://github.com/TerminalSkills/skills/tree/0abb852010feb21984fa40f0bf52352a440ae6d4/skills/image-compare)
+- **shapely** — [Workflow Kit](../skills/shapely/) · [Лицензия](../skills/shapely/LICENSE) · [Изменения](../skills/shapely/CHANGES.md)
+- **image-compare** — [Workflow Kit](../skills/image-compare/) · [Лицензия](../skills/image-compare/LICENSE) · [Изменения](../skills/image-compare/CHANGES.md)
 
 ## Документы, видео и русский текст
 

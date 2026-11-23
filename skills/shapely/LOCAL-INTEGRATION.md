@@ -1,0 +1,3 @@
+Local checked edition: 2026-11-07. This is a library guidance skill, not a CAD reader or drawing editor. Extract CAD geometry using cad-drawings first, preserve units/OCS/source IDs, then use this isolated Shapely runtime. Python packages in other projects are not changed. Geometry validity or make_valid does not approve a design change; retain the original and ask only when an actual design decision is missing. Do not change units, elevations or existing project geometry automatically. Locally corrected scalar .copy() and GeoJSON-Z guidance; runtime examples must be checked against the installed API. Geometry coordinate precision and source provenance remain project requirements.
+
+Use a project-local Python environment with Shapely 2.2 installed.

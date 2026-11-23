@@ -21,11 +21,11 @@ metadata:
 
 ## Local integration and precedence
 
-Local launcher: `python scripts/run_local.py info <test.dxf>`. This launcher selects the verified isolated runtime. As of 2026-11-12, use this launcher for every CAD command: local-runtime.json also supplies the locally deployed ODA converter through child-process CAD_DRAWINGS_ODA; system environment is unchanged. pywin32 312 is installed in that runtime. Installation does not imply AutoCAD COM, plotting, or engineering QA acceptance; consult the validation note in SKILLS-GUIDE.md.
+Local launcher: use the Python from the project environment to run scripts/run_local.py. Set the absolute Python path in scripts/local-runtime.json. Optionally add the absolute path to an independently installed ODA File Converter to enable DWG conversion.
 
 Local checked edition: 2026-11-07. Use the isolated Python runtime below; system Python was not modified. Cleanup path/junction handling has a local security patch; do not replace this copy with upstream without re-review. Cleanup still requires an explicit list and deletion authorization. Use only native file analysis/generation here: do not start or attach to CAD/COM, or pass --allow-com, --probe-com, --backend com, or --convert-with com without separate user authorization and the host's permitted automation route. Never overwrite an input. Existing AGENTS, CAD_CONVENTIONS and approved units/scales/OSMODE take precedence; do not infer ground elevations or repair project HATCH geometry automatically. Drawing/image/PDF edits remain subject to the host's relevant skills. DXF preview is approximate, not an AutoCAD plot. Do not load external xrefs without checking scope.
 
-Configure the absolute path to a verified isolated Python in scripts/local-runtime.json. Set oda only if a verified ODA File Converter is installed. The wrapper does not select a fallback interpreter.
+Configure the recipient’s isolated runtime in scripts/local-runtime.json.
 
 
 

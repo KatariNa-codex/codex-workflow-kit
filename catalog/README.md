@@ -16,7 +16,9 @@
 - [Скиллы по задачам](skills-by-topic.md) — 67 позиций со ссылками на опубликованную версию Workflow Kit или исходник.
 - [Плагины, MCP и другие надстройки](integrations.md) — подключение, условия и что уже проверено.
 
-## Скачать тематический набор
+## Скачать тематические наборы
+
+**[Чертежи и геоданные в Codex](cad-geo.md)** — 7 проверенных скиллов. [ZIP 1.0.0](downloads/workflow-kit-cad-geo-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-cad-geo-1.0.0.zip.sha256)
 
 [Проверка проектов в Codex, ZIP 1.0.0](downloads/workflow-kit-project-review-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-project-review-1.0.0.zip.sha256)
 
