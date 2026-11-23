@@ -9,7 +9,7 @@
 | [Gmail](gmail.md) | Поиск и чтение почты в Codex | Необязательное подключение аккаунта с проверкой на учебном письме |
 | [nlm-skill](nlm-skill.md) | Работа с источниками и материалами NotebookLM в Codex | Официальная установка скилла и подключение MCP. MIT, содержимое сверено с `v0.16.6` |
 | Скиллы Codex | Готовые инструкции для задач с документами, кодом и другими материалами | [Официальный каталог скиллов Codex](https://github.com/openai/skills) |
-| [Генеалогия](kinship.md) | Исследование источников и оформление семейного древа | Единый ZIP со скиллом и Family Tree Starter |
+| [Генеалогия](kinship.md) | Исследование источников и оформление семейного древа | Две самостоятельные части под одной карточкой |
 
 ## Выбрать дополнения
 
@@ -18,7 +18,7 @@
 
 ## Скачать тематические наборы
 
-**[Генеалогия](kinship.md)** — исследовательский скилл и Family Tree Starter. [ZIP 1.1.0](downloads/workflow-kit-kinship-1.1.0.zip) · [Контрольная сумма](downloads/workflow-kit-kinship-1.1.0.zip.sha256)
+**[Генеалогия](kinship.md)** — [архив скилла 1.0.0](downloads/workflow-kit-kinship-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-kinship-1.0.0.zip.sha256) · [Family Tree Starter](https://github.com/KatariNa-codex/family-tree-starter)
 
 **[Русские тексты и встречи](text-meetings.md)** — пять скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-text-meetings-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-text-meetings-1.0.0.zip.sha256)
 

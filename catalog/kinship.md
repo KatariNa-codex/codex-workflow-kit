@@ -1,25 +1,17 @@
 # Генеалогия в Codex
 
-[Скачать единый ZIP 1.1.0](downloads/workflow-kit-kinship-1.1.0.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-kinship-1.1.0.zip.sha256)
+Выберите, с чего начать. Скилл и сайт устанавливаются отдельно.
 
-В одном ZIP две части. Скилл ex-ussr-kinship-research нужен для ведения дела, а Family Tree Starter — для оформления древа на компьютере.
+## Исследовать источники
 
-## Начать проверку источников
+Архив содержит скилл ex-ussr-kinship-research, пустые шаблоны дела и три локальных помощника. Распакуйте ZIP и скопируйте папку скилла в .agents/skills выбранного проекта. Нужен Python. Из архива проверены создание вымышленного дела, отказ от перезаписи, SHA-256 учебного источника и обнаружение отсутствующей записи в реестре. [Скачать скилл 1.0.0](downloads/workflow-kit-kinship-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-kinship-1.0.0.zip.sha256)
 
-Скопируйте папку skills/ex-ussr-kinship-research в .agents/skills выбранного проекта и откройте её SKILL.md. Нужен Python. В пакете есть пустые шаблоны и помощники для создания дела, вычисления SHA-256 и проверки ссылок в реестрах. Храните исследовательское дело отдельно от скилла.
+[Инструкция скилла](../skills/ex-ussr-kinship-research/SKILL.md) · [MIT](../skills/ex-ussr-kinship-research/LICENSE) · [Происхождение и изменения](../skills/ex-ussr-kinship-research/CHANGES.md)
 
 ## Оформить древо
 
-Откройте папку family-tree-starter в Codex и следуйте START-HERE.md. Для запуска нужен Node.js. В этой папке есть публичный демонстрационный проект. Реальные материалы автора Workflow Kit и история его семейных поисков в комплект не входят.
+Откройте отдельный репозиторий Family Tree Starter и следуйте START-HERE.md. Нужен Node.js. Можно начать с опубликованного демонстрационного проекта. [Открыть Family Tree Starter](https://github.com/KatariNa-codex/family-tree-starter) · [MIT](https://github.com/KatariNa-codex/family-tree-starter/blob/main/LICENSE) · [Доработки](https://github.com/KatariNa-codex/family-tree-starter/blob/main/CHANGES.md)
 
-Перед установкой откройте LICENSE и CHANGES.md в каждой части. Источники и лицензии сохраняются отдельно. Содержимое форка взято из опубликованной ревизии ba95c43.
-
-
-## Источники и лицензии
-
-- [Скилл исследования](../skills/ex-ussr-kinship-research/SKILL.md) · [MIT](../skills/ex-ussr-kinship-research/LICENSE) · [Что входит в поставку](../skills/ex-ussr-kinship-research/CHANGES.md).
-- [Публичный форк Family Tree Starter](https://github.com/KatariNa-codex/family-tree-starter) · [MIT](https://github.com/KatariNa-codex/family-tree-starter/blob/main/LICENSE) · [Доработки](https://github.com/KatariNa-codex/family-tree-starter/blob/main/CHANGES.md).
-
-Из единого ZIP проверены локальные помощники на вымышленном деле, проверка данных и типов Family Tree Starter, тесты и обе сборки сайта на публичном демонстрационном наборе.
+Если нужны обе части, сначала соберите записи и проверьте источники в исследовательском деле. Затем внесите нужные сведения и ссылки в своё древо вручную. Установка скилла автоматически данные в сайт не переносит.
 
 [Каталог дополнений](README.md)
