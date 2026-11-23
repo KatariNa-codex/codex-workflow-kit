@@ -91,4 +91,4 @@
 
 ## Генеалогия
 
-- **ex-ussr-kinship-research** — [Исходник](https://github.com/DenisSergeevitch/ex-ussr-kinship-research/tree/84a78bf3ac699c4218104760452aaf7b40032e91)
+- **ex-ussr-kinship-research** — [Workflow Kit](../skills/ex-ussr-kinship-research/) · [Лицензия](../skills/ex-ussr-kinship-research/LICENSE) · [Изменения](../skills/ex-ussr-kinship-research/CHANGES.md)

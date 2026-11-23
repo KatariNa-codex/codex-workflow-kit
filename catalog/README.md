@@ -18,6 +18,8 @@
 
 ## Скачать тематические наборы
 
+**[Генеалогическое исследование](kinship.md)** — скилл и пустые шаблоны для локального дела. [ZIP 1.0.0](downloads/workflow-kit-kinship-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-kinship-1.0.0.zip.sha256)
+
 **[Русские тексты и встречи](text-meetings.md)** — пять скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-text-meetings-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-text-meetings-1.0.0.zip.sha256)
 
 **[Сопровождение проектов](project-maintenance.md)** — 13 скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-project-maintenance-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-project-maintenance-1.0.0.zip.sha256)
