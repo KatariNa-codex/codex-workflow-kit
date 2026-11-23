@@ -9,7 +9,7 @@
 | [Gmail](gmail.md) | Поиск и чтение почты в Codex | Необязательное подключение аккаунта с проверкой на учебном письме |
 | [nlm-skill](nlm-skill.md) | Работа с источниками и материалами NotebookLM в Codex | Официальная установка скилла и подключение MCP. MIT, содержимое сверено с `v0.16.6` |
 | Скиллы Codex | Готовые инструкции для задач с документами, кодом и другими материалами | [Официальный каталог скиллов Codex](https://github.com/openai/skills) |
-| [Family Tree Starter](https://github.com/KatariNa-codex/family-tree-starter) | Демонстрационный шаблон семейного древа с карточками, картой и журналом | [Отдельный форк](https://github.com/KatariNa-codex/family-tree-starter) с вымышленными данными · [MIT](https://github.com/KatariNa-codex/family-tree-starter/blob/main/LICENSE) · [Доработки](https://github.com/KatariNa-codex/family-tree-starter/blob/main/CHANGES.md) |
+| [Генеалогия](kinship.md) | Исследование источников и оформление семейного древа | Единый ZIP со скиллом и Family Tree Starter |
 
 ## Выбрать дополнения
 
@@ -18,7 +18,7 @@
 
 ## Скачать тематические наборы
 
-**[Генеалогическое исследование](kinship.md)** — скилл и пустые шаблоны для локального дела. [ZIP 1.0.0](downloads/workflow-kit-kinship-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-kinship-1.0.0.zip.sha256)
+**[Генеалогия](kinship.md)** — исследовательский скилл и Family Tree Starter. [ZIP 1.1.0](downloads/workflow-kit-kinship-1.1.0.zip) · [Контрольная сумма](downloads/workflow-kit-kinship-1.1.0.zip.sha256)
 
 **[Русские тексты и встречи](text-meetings.md)** — пять скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-text-meetings-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-text-meetings-1.0.0.zip.sha256)
 
@@ -32,7 +32,7 @@
 
 **[Презентации и мультимедиа](media.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-media-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-media-1.0.0.zip.sha256)
 
-**[Документы, PDF и таблицы](documents.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-documents-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-documents-1.0.0.zip.sha256)
+**[Документы, PDF и таблицы](documents.md)** — три проверенных скилла. [ZIP 1.0.1](downloads/workflow-kit-documents-1.0.1.zip) · [Контрольная сумма](downloads/workflow-kit-documents-1.0.1.zip.sha256)
 
 **[Чертежи и геоданные в Codex](cad-geo.md)** — 7 проверенных скиллов. [ZIP 1.0.0](downloads/workflow-kit-cad-geo-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-cad-geo-1.0.0.zip.sha256)
 
