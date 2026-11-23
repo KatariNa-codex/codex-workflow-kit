@@ -18,6 +18,8 @@
 
 ## Скачать тематические наборы
 
+**[Скиллы, MCP и инструменты](skill-tools.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-skill-tools-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-skill-tools-1.0.0.zip.sha256)
+
 **[Исследования и работа с продуктом](product-research.md)** — восемь скиллов с проверками на учебных сценариях. [ZIP 1.0.0](downloads/workflow-kit-product-research-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-product-research-1.0.0.zip.sha256)
 
 **[Интерфейсы и сайты](sites.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-sites-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-sites-1.0.0.zip.sha256)

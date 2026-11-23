@@ -84,10 +84,10 @@
 
 ## Скиллы, MCP и инструменты
 
-- **mcp-builder** — [Исходник](https://github.com/anthropics/skills/tree/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/mcp-builder)
-- **skill-conductor** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/skill-conductor)
-- **skill-eval** — [Исходник](https://github.com/aws-samples/sample-agent-skill-eval/tree/13b2277b300d2beafa09bbbe425ca0cc41f34c8d)
-- **tool-design** — [Исходник](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/9ff0c99108b36d3b886defd825d8ac1f47dba374/skills/tool-design)
+- **mcp-builder** — [Workflow Kit](../skills/mcp-builder/) · [Лицензия](../skills/mcp-builder/LICENSE) · [Изменения](../skills/mcp-builder/CHANGES.md)
+- **skill-conductor** — [Workflow Kit](../skills/skill-conductor/) · [Лицензия](../skills/skill-conductor/LICENSE) · [Изменения](../skills/skill-conductor/CHANGES.md)
+- **skill-eval** — [Workflow Kit](../skills/skill-eval/) · [Лицензия](../skills/skill-eval/LICENSE) · [Изменения](../skills/skill-eval/CHANGES.md)
+- **tool-design** — [Workflow Kit](../skills/tool-design/) · [Лицензия](../skills/tool-design/LICENSE) · [Изменения](../skills/tool-design/CHANGES.md)
 
 ## Генеалогия
 
