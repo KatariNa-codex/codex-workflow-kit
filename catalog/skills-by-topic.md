@@ -22,7 +22,7 @@
 - **doc-to-markdown** — [Workflow Kit](../skills/doc-to-markdown/) · [Лицензия](../skills/doc-to-markdown/LICENSE) · [Изменения](../skills/doc-to-markdown/CHANGES.md)
 - **libreoffice-calc** — [Workflow Kit](../skills/libreoffice-calc/) · [Лицензия](../skills/libreoffice-calc/LICENSE) · [Изменения](../skills/libreoffice-calc/CHANGES.md)
 - **spreadsheet-auditor** — [Workflow Kit](../skills/spreadsheet-auditor/) · [Лицензия](../skills/spreadsheet-auditor/LICENSE) · [Изменения](../skills/spreadsheet-auditor/CHANGES.md)
-- **ppt-creator** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/ppt-creator)
+- **ppt-creator** — [Workflow Kit](../skills/ppt-creator/) · [Лицензия](../skills/ppt-creator/LICENSE) · [Изменения](../skills/ppt-creator/CHANGES.md)
 - **human-text** — [Workflow Kit](../skills/human-text/) · [Лицензия](../skills/human-text/LICENSE) · [Изменения](../skills/human-text/CHANGES.md)
 - **ru-text** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/ru-text)
 - **ru-writing** — [Workflow Kit](../skills/ru-writing/) · [Лицензия](../skills/ru-writing/LICENSE) · [Изменения](../skills/ru-writing/CHANGES.md)
@@ -31,7 +31,7 @@
 - **transcribe** — [Исходник](https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/transcribe)
 - **speech** — [Исходник](https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/speech)
 - **reels-console** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/reels-console)
-- **lottie** — [Исходник](https://github.com/mxmlab/claude-lottie-skill/tree/0187776beff9ad66adb11f535633e6950bc662dc/lottie)
+- **lottie** — [Workflow Kit](../skills/lottie/) · [Лицензия](../skills/lottie/LICENSE) · [Изменения](../skills/lottie/CHANGES.md)
 - **video-by-code** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/video-by-code)
 - **youtube-downloader** — [Workflow Kit](../skills/youtube-downloader/) · [Лицензия](../skills/youtube-downloader/LICENSE) · [Изменения](../skills/youtube-downloader/CHANGES.md)
 

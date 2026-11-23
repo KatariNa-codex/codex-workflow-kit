@@ -9,7 +9,11 @@ def discover_renderer():
     path=pathlib.Path(executable)
     if path.suffix.lower() in ('.cmd','.bat','.ps1'):
         node=shutil.which('node')
-        cli=path.parent/'node_modules/@mermaid-js/mermaid-cli/src/cli.js'
+        package=pathlib.Path('@mermaid-js/mermaid-cli/src/cli.js')
+        if path.parent.name=='.bin' and path.parent.parent.name=='node_modules':
+            cli=path.parent.parent/package
+        else:
+            cli=path.parent/'node_modules'/package
         if not node or not cli.is_file():raise RuntimeError('mmdc shim requires an existing node and adjacent Mermaid CLI; no shell fallback')
         return [node,str(cli.resolve())]
     return [str(path)]

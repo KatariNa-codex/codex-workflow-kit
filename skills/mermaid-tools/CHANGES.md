@@ -14,3 +14,5 @@
 - `scripts/puppeteer-config.json` · `62868aec744a24c6f548047cb718692d35d14c768c0edfe23964e7796e4ed0bf`
 - `SKILL.md` · `0535309e4577a043e1629c66ecb08fb93d490dd9161c954a8d87bf86cafd289d`
 - `КАК_ИСПОЛЬЗОВАТЬ.md` · `fcdaa07ee1c9cd02ebb9a1326a67f608812f9304b25bc4c94ccd87d22c63a428`
+
+The Windows launcher now also resolves the Mermaid CLI package next to npm’s project-local .bin directory. It invokes the Node entry directly.
