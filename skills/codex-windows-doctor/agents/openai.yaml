@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Windows Doctor"
+  short_description: "Diagnose Codex Windows, sandbox, and WSL failures"
+  default_prompt: "Use $codex-windows-doctor to diagnose this Codex Windows or WSL failure and produce a privacy-safe report."
