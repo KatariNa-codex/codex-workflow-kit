@@ -20,8 +20,8 @@
 ## Документы, видео и русский текст
 
 - **doc-to-markdown** — [Workflow Kit](../skills/doc-to-markdown/) · [Лицензия](../skills/doc-to-markdown/LICENSE) · [Изменения](../skills/doc-to-markdown/CHANGES.md)
-- **libreoffice-calc** — [Исходник](https://github.com/dfk1352/LibreOffice-skills/tree/39ea28a197188f220dc504ff1c1d3f8ea1543f91/skills/libreoffice-calc)
-- **spreadsheet-auditor** — [Исходник](https://github.com/petehottelet/spreadsheet-auditor/tree/9930ae779c68f05cdd7520092bcad5aa2c4c497b)
+- **libreoffice-calc** — [Workflow Kit](../skills/libreoffice-calc/) · [Лицензия](../skills/libreoffice-calc/LICENSE) · [Изменения](../skills/libreoffice-calc/CHANGES.md)
+- **spreadsheet-auditor** — [Workflow Kit](../skills/spreadsheet-auditor/) · [Лицензия](../skills/spreadsheet-auditor/LICENSE) · [Изменения](../skills/spreadsheet-auditor/CHANGES.md)
 - **ppt-creator** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/ppt-creator)
 - **human-text** — [Workflow Kit](../skills/human-text/) · [Лицензия](../skills/human-text/LICENSE) · [Изменения](../skills/human-text/CHANGES.md)
 - **ru-text** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/ru-text)
