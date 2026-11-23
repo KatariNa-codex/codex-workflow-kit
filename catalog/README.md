@@ -18,6 +18,8 @@
 
 ## Скачать тематические наборы
 
+**[Русские тексты и встречи](text-meetings.md)** — пять скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-text-meetings-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-text-meetings-1.0.0.zip.sha256)
+
 **[Сопровождение проектов](project-maintenance.md)** — 13 скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-project-maintenance-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-project-maintenance-1.0.0.zip.sha256)
 
 **[Скиллы, MCP и инструменты](skill-tools.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-skill-tools-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-skill-tools-1.0.0.zip.sha256)
@@ -51,7 +53,7 @@
 | [mermaid-tools](../skills/mermaid-tools/) | Рендеринг диаграмм Mermaid из Markdown | Нужен установленный Mermaid CLI. Проверена защита существующей папки вывода. | [MIT](../skills/mermaid-tools/LICENSE) · [Изменения](../skills/mermaid-tools/CHANGES.md) |
 | [multi-layer-review](../skills/multi-layer-review/) | Ревью ТЗ и планов по пяти ракурсам | Независимые рецензенты при доступной делегации. Проверена находка по учебному ТЗ и файлу. | [MIT](../skills/multi-layer-review/LICENSE) · [Изменения](../skills/multi-layer-review/CHANGES.md) |
 | [project-audit](../skills/project-audit/) | Аудит инструкций, структуры и памяти проекта | Quick и Full. Проверено определение области и папки памяти на временных профилях Windows. | [MIT](../skills/project-audit/LICENSE) · [Изменения](../skills/project-audit/CHANGES.md) |
-| [ru-writing](../skills/ru-writing/) | Подготовка и вычитка русских текстов | Нужны [human-text](../skills/human-text/) и [ru-text](https://github.com/talkstream/ru-text/tree/main/skills/ru-text). Проверена структура инструкции. | [MIT](../skills/ru-writing/LICENSE) · [Изменения](../skills/ru-writing/CHANGES.md) |
+| [ru-writing](../skills/ru-writing/) | Подготовка и вычитка русских текстов | Нужны [human-text](../skills/human-text/) и [ru-text](../skills/ru-text/). Проверена структура инструкции. | [MIT](../skills/ru-writing/LICENSE) · [Изменения](../skills/ru-writing/CHANGES.md) |
 | [spec-first](../skills/spec-first/) | Согласование Vision и Blueprint перед сборкой | В выпуске добавлена развилка для AGENTS.md в Codex и CLAUDE.md в Claude Code. Проверена структура инструкции. | [MIT](../skills/spec-first/LICENSE) · [Изменения](../skills/spec-first/CHANGES.md) |
 | [youtube-downloader](../skills/youtube-downloader/) | Работа с разрешёнными видео и аудио | Нужны установленные yt-dlp и ffmpeg. Проверен запуск справки, без загрузки видео. | [MIT](../skills/youtube-downloader/LICENSE) · [Изменения](../skills/youtube-downloader/CHANGES.md) |
 

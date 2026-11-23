@@ -1,0 +1,5 @@
+interface:
+  display_name: "ru-text"
+  short_description: "Вычитка русских текстов с сохранением смысла"
+policy:
+  allow_implicit_invocation: true
