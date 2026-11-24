@@ -4,7 +4,7 @@ Workflow Kit помогает Codex сохранять состояние про
 
 ## Установить через Codex
 
-1. Скачайте [Workflow Kit 1.1.0-preview.6](Workflow-Kit-1.1.0-preview.6.zip). Для проверки скачивания рядом есть [контрольная сумма ZIP](Workflow-Kit-1.1.0-preview.6.zip.sha256).
+1. Скачайте [Workflow Kit 1.1.0-preview.7](Workflow-Kit-1.1.0-preview.7.zip). Для проверки скачивания рядом есть [контрольная сумма ZIP](Workflow-Kit-1.1.0-preview.7.zip.sha256).
 2. Откройте Codex Desktop. Приложите ZIP к сообщению или укажите путь к нему.
 3. Скопируйте сообщение ниже. Codex проверит комплект и необходимые программы перед установкой.
 
