@@ -1,8 +1,8 @@
 # Чертежи и геоданные для Codex
 
-В наборе 7 скиллов для чертежей, геометрии и карт. Можно установить один или несколько скиллов в учебный или рабочий проект.
+В наборе 9 скиллов для чертежей, геометрии и карт. Можно установить один или несколько скиллов в учебный или рабочий проект.
 
-[Скачать ZIP](downloads/workflow-kit-cad-geo-1.0.0.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-cad-geo-1.0.0.zip.sha256)
+[Скачать ZIP](downloads/workflow-kit-cad-geo-1.1.0.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-cad-geo-1.1.0.zip.sha256)
 
 ## Установить
 
@@ -22,6 +22,8 @@
 | [proj](../skills/proj/SKILL.md) | Проверка систем координат и преобразование точек | Отдельная среда с PROJ и базой EPSG. | cs2cs преобразовал точку с проверенным порядком осей. Сверены обе координаты. |
 | [shapely](../skills/shapely/SKILL.md) | Операции над геометрией | Python с Shapely 2.2. | Проверены площадь пересечения и третья координата точки при сериализации. |
 | [image-compare](../skills/image-compare/SKILL.md) | Сравнение снимков и визуальных экспортов | Python 3.12+, Pillow, NumPy, scikit-image. | Найден один заранее изменённый пиксель. Проверен отказ от перезаписи готового результата. |
+| [pyqgis](../skills/pyqgis/SKILL.md) | Работа со слоями и Processing из Python | QGIS с комплектным Python. | QGIS 3.44.15 LTR на Windows: создан учебный слой EPSG:3857, записан GeoPackage и построен буфер 10 м. |
+| [qgis-process](../skills/qgis-process/SKILL.md) | Запуск алгоритмов Processing из терминала | Утилита qgis_process из QGIS. | QGIS 3.44.15 LTR на Windows: буфер 10 м записан в GeoPackage и проверен через PyQGIS. Система координат, атрибут, границы и площадь совпали с результатом Python. |
 
 Codex CLI нашёл эти скиллы после распаковки и копирования в отдельный проект. Проверки выполнены на вымышленных файлах. CAD/COM, точную печать, загрузку фоновых карт и интерактивные окна Codex Desktop и QGIS в этой серии не проверяли.
 
@@ -37,6 +39,7 @@ Codex CLI нашёл эти скиллы после распаковки и ко
 - shapely · [Лицензия](../skills/shapely/LICENSE) · [Исходная ревизия и изменения](../skills/shapely/CHANGES.md)
 - image-compare · [Лицензия](../skills/image-compare/LICENSE) · [Исходная ревизия и изменения](../skills/image-compare/CHANGES.md)
 
-Выпуск QGIS-скиллов ожидает рабочей проверки. Тестовую установку QGIS завершить не удалось. [Ссылки на исходники](skills-by-topic.md#чертежи-и-карты)
+- pyqgis · [Лицензия](../skills/pyqgis/LICENSE) · [Исходная ревизия и изменения](../skills/pyqgis/CHANGES.md)
+- qgis-process · [Лицензия](../skills/qgis-process/LICENSE) · [Исходная ревизия и изменения](../skills/qgis-process/CHANGES.md)
 
 [Каталог дополнений](README.md)

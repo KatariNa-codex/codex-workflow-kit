@@ -12,8 +12,8 @@
 - **geopandas** — [Workflow Kit](../skills/geopandas/) · [Лицензия](../skills/geopandas/LICENSE) · [Изменения](../skills/geopandas/CHANGES.md)
 - **leaflet** — [Workflow Kit](../skills/leaflet/) · [Лицензия](../skills/leaflet/LICENSE) · [Изменения](../skills/leaflet/CHANGES.md)
 - **proj** — [Workflow Kit](../skills/proj/) · [Лицензия](../skills/proj/LICENSE) · [Изменения](../skills/proj/CHANGES.md)
-- **pyqgis** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/pyqgis)
-- **qgis-process** — [Исходник](https://github.com/znlgis/opengis-skills/tree/6562616dd88baaa102b03683b4e210e16fa35a38/gis/qgis-process)
+- **pyqgis** — [Workflow Kit](../skills/pyqgis/) · [Лицензия](../skills/pyqgis/LICENSE) · [Изменения](../skills/pyqgis/CHANGES.md)
+- **qgis-process** — [Workflow Kit](../skills/qgis-process/) · [Лицензия](../skills/qgis-process/LICENSE) · [Изменения](../skills/qgis-process/CHANGES.md)
 - **shapely** — [Workflow Kit](../skills/shapely/) · [Лицензия](../skills/shapely/LICENSE) · [Изменения](../skills/shapely/CHANGES.md)
 - **image-compare** — [Workflow Kit](../skills/image-compare/) · [Лицензия](../skills/image-compare/LICENSE) · [Изменения](../skills/image-compare/CHANGES.md)
 
