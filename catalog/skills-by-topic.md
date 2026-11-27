@@ -57,8 +57,6 @@
 - **pricing** — [Workflow Kit](../skills/pricing/) · [Лицензия](../skills/pricing/LICENSE) · [Изменения](../skills/pricing/CHANGES.md)
 - **marketing-plan** — [Workflow Kit](../skills/marketing-plan/) · [Лицензия](../skills/marketing-plan/LICENSE) · [Изменения](../skills/marketing-plan/CHANGES.md)
 - **launch** — [Workflow Kit](../skills/launch/) · [Лицензия](../skills/launch/LICENSE) · [Изменения](../skills/launch/CHANGES.md)
-- **negotiation** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/negotiation)
-- **high-output-management** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/external/high-output-management)
 - **idea-storm** — [Workflow Kit](../skills/idea-storm/) · [Лицензия](../skills/idea-storm/LICENSE) · [Изменения](../skills/idea-storm/CHANGES.md)
 
 ## Проверка и сопровождение проектов
