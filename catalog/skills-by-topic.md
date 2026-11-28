@@ -53,7 +53,6 @@
 - **product-check** — [Workflow Kit](../skills/product-check/) · [Лицензия](../skills/product-check/LICENSE) · [Изменения](../skills/product-check/CHANGES.md)
 - **analytics** — [Workflow Kit](../skills/analytics/) · [Лицензия](../skills/analytics/LICENSE) · [Изменения](../skills/analytics/CHANGES.md)
 - **ab-testing** — [Workflow Kit](../skills/ab-testing/) · [Лицензия](../skills/ab-testing/LICENSE) · [Изменения](../skills/ab-testing/CHANGES.md)
-- **competitive-ads-extractor** — [Исходник](https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/competitive-ads-extractor)
 - **pricing** — [Workflow Kit](../skills/pricing/) · [Лицензия](../skills/pricing/LICENSE) · [Изменения](../skills/pricing/CHANGES.md)
 - **marketing-plan** — [Workflow Kit](../skills/marketing-plan/) · [Лицензия](../skills/marketing-plan/LICENSE) · [Изменения](../skills/marketing-plan/CHANGES.md)
 - **launch** — [Workflow Kit](../skills/launch/) · [Лицензия](../skills/launch/LICENSE) · [Изменения](../skills/launch/CHANGES.md)
