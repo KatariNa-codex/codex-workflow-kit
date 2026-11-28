@@ -30,9 +30,9 @@
 - **meeting-minutes-taker** — [Workflow Kit](../skills/meeting-minutes-taker/) · [Лицензия](../skills/meeting-minutes-taker/LICENSE) · [Изменения](../skills/meeting-minutes-taker/CHANGES.md)
 - **transcribe** — [Исходник](https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/transcribe)
 - **speech** — [Исходник](https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/speech)
-- **reels-console** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/reels-console)
+- **reels-console** — [Набор «Презентации и мультимедиа» 1.2.0](media.md) · [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/reels-console)
 - **lottie** — [Workflow Kit](../skills/lottie/) · [Лицензия](../skills/lottie/LICENSE) · [Изменения](../skills/lottie/CHANGES.md)
-- **video-by-code** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/video-by-code)
+- **video-by-code** — [Набор «Презентации и мультимедиа» 1.2.0](media.md) · [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/video-by-code)
 - **youtube-downloader** — [Workflow Kit](../skills/youtube-downloader/) · [Лицензия](../skills/youtube-downloader/LICENSE) · [Изменения](../skills/youtube-downloader/CHANGES.md)
 
 ## Интерфейсы и сайты

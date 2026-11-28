@@ -46,11 +46,11 @@
 
 ### Презентации и мультимедиа
 
-Собрать презентацию, превратить схему Mermaid в изображение или подготовить видео.
+Собрать презентацию, превратить схему Mermaid в изображение, смонтировать ролик или сделать анимацию.
 
-**Скиллы:** `ppt-creator`, `mermaid-tools`, `lottie`, `youtube-downloader`.
+**Скиллы:** `ppt-creator`, `mermaid-tools`, `lottie`, `youtube-downloader`, `video-by-code`, `reels-console`.
 
-[Карточка набора](media.md) · [ZIP 1.0.0](downloads/workflow-kit-media-1.0.0.zip) · [SHA-256](downloads/workflow-kit-media-1.0.0.zip.sha256)
+[Карточка набора](media.md) · [ZIP 1.2.0](downloads/workflow-kit-media-1.2.0.zip) · [SHA-256](downloads/workflow-kit-media-1.2.0.zip.sha256)
 
 ### Интерфейсы и сайты
 
@@ -102,7 +102,7 @@
 
 ## Скиллы по ссылкам на исходники
 
-`transcribe`, `speech`, `site-audit` и `gh-fix-ci` доступны у авторов. Для `video-by-code` и `reels-console` в указателе также даны ссылки на исходники. [Ссылки в указателе скиллов](skills-by-topic.md).
+`transcribe`, `speech`, `site-audit` и `gh-fix-ci` доступны у авторов. [Ссылки в указателе скиллов](skills-by-topic.md).
 
 ## Скиллы из этого репозитория
 

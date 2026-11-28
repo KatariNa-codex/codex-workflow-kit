@@ -1,8 +1,8 @@
 # Презентации и мультимедиа для Codex
 
-Четыре скилла для презентаций, диаграмм, анимации и работы с разрешённым видео.
+Шесть скиллов для презентаций, диаграмм, анимации и работы с разрешённым видео.
 
-[Скачать ZIP](downloads/workflow-kit-media-1.0.0.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-media-1.0.0.zip.sha256).
+[Скачать ZIP 1.2.0](downloads/workflow-kit-media-1.2.0.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-media-1.2.0.zip.sha256)
 
 ## Установить
 
@@ -16,8 +16,10 @@
 | [mermaid-tools](../skills/mermaid-tools/SKILL.md) | Python, Node.js, Mermaid CLI и совместимый браузер для Puppeteer | Из Markdown извлечена схема. Создан PNG, повторная запись в занятую папку отклонена |
 | [lottie](../skills/lottie/SKILL.md) | Python. Pillow и NumPy нужны только дополнительным помощникам | Записаны и повторно прочитаны JSON и TGS. Повторная запись отклонена |
 | [youtube-downloader](../skills/youtube-downloader/SKILL.md) | Python и yt-dlp. FFmpeg нужен для объединения дорожек и извлечения аудио | Скачан вымышленный MP4 с локального адреса, сверено содержимое |
+| video-by-code | FFmpeg, Node.js и Playwright для Canvas, Python для нарезки | На Windows отрендерены вертикальная Canvas-анимация и нарезка синтетического видео. Проверены листы кадров и декодирование H.264/AAC. |
+| reels-console | FFmpeg и ffprobe, локальный Whisper для титров, OpenCV 4.x для лица | На Windows проверены монтаж с русскими титрами, громкость −14,69 LUFS и привязка фронтального лица к вертикальному кадру без InsightFace. |
 
-Проверки не включали вход в YouTube, извлечение аудио, публикацию в Telegram и визуальную приёмку анимации. Лицензия и история изменений есть в каждой папке. Codex CLI обнаружил все скиллы после копирования из распакованного ZIP.
+Проверки не включали вход в YouTube, извлечение аудио, публикацию в Telegram, визуальную приёмку Lottie и озвучку video-by-code. Лицензия и история изменений есть в каждой папке. Codex CLI обнаружил все скиллы после копирования из распакованного ZIP.
 
 ## Источники и лицензии
 
@@ -25,5 +27,7 @@
 - mermaid-tools · [Лицензия](../skills/mermaid-tools/LICENSE) · [Происхождение и изменения](../skills/mermaid-tools/CHANGES.md).
 - lottie · [Лицензия](../skills/lottie/LICENSE) · [Происхождение и изменения](../skills/lottie/CHANGES.md).
 - youtube-downloader · [Лицензия](../skills/youtube-downloader/LICENSE) · [Происхождение и изменения](../skills/youtube-downloader/CHANGES.md).
+- video-by-code · [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/video-by-code). Лицензия и описание изменений находятся в ZIP 1.2.0.
+- reels-console · [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/reels-console). Лицензия и описание изменений находятся в ZIP 1.2.0.
 
 [Каталог дополнений](README.md)
