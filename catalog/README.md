@@ -74,7 +74,7 @@
 
 **Скиллы:** `idea-storm`, `multi-layer-review`, `project-audit`, `agent-eval`.
 
-[ZIP 1.0.0](downloads/workflow-kit-project-review-1.0.0.zip) · [SHA-256](downloads/workflow-kit-project-review-1.0.0.zip.sha256)
+[Карточка набора](project-review.md) · [ZIP 1.0.0](downloads/workflow-kit-project-review-1.0.0.zip) · [SHA-256](downloads/workflow-kit-project-review-1.0.0.zip.sha256)
 
 ### Сопровождение проектов
 
