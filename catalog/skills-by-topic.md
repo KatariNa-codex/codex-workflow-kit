@@ -37,7 +37,7 @@
 
 ## Интерфейсы и сайты
 
-- **design-first** — [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/design-first)
+- **design-first** — [Workflow Kit](../skills/design-first/) · [Лицензия](../skills/design-first/LICENSE) · [Изменения](../skills/design-first/CHANGES.md) · [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/design-first)
 - **algorithmic-art** — [Workflow Kit](../skills/algorithmic-art/) · [Лицензия](../skills/algorithmic-art/LICENSE) · [Изменения](../skills/algorithmic-art/CHANGES.md)
 - **ui-ux-pro-max** — [Workflow Kit](../skills/ui-ux-pro-max/) · [Лицензия](../skills/ui-ux-pro-max/LICENSE) · [Изменения](../skills/ui-ux-pro-max/CHANGES.md)
 - **site-architecture** — [Workflow Kit](../skills/site-architecture/) · [Лицензия](../skills/site-architecture/LICENSE) · [Изменения](../skills/site-architecture/CHANGES.md)
