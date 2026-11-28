@@ -13,32 +13,96 @@
 
 ## Выбрать дополнения
 
-- [Скиллы по задачам](skills-by-topic.md) — 65 позиций со ссылками на опубликованную версию Workflow Kit или исходник.
+- [Скиллы по задачам](skills-by-topic.md) — 64 позиции со ссылками на опубликованную версию Workflow Kit или исходник.
 - [Плагины, MCP и другие надстройки](integrations.md) — подключение, условия и что уже проверено.
 
 ## Скачать тематические наборы
 
-**[Генеалогия](kinship.md)** — [архив скилла 1.0.0](downloads/workflow-kit-kinship-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-kinship-1.0.0.zip.sha256) · [Family Tree Starter](https://github.com/KatariNa-codex/family-tree-starter)
+Можно установить весь набор или выбрать отдельные папки скиллов из ZIP. В карточках указаны зависимости, способ установки и результаты проверок.
 
-**[Русские тексты и встречи](text-meetings.md)** — пять скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-text-meetings-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-text-meetings-1.0.0.zip.sha256)
+### Чертежи и геоданные
 
-**[Сопровождение проектов](project-maintenance.md)** — 13 скиллов с учебными проверками. [ZIP 1.0.0](downloads/workflow-kit-project-maintenance-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-project-maintenance-1.0.0.zip.sha256)
+Проверить DWG и DXF, пересчитать координаты, обработать слой в QGIS или показать данные на веб-карте.
 
-**[Скиллы, MCP и инструменты](skill-tools.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-skill-tools-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-skill-tools-1.0.0.zip.sha256)
+**Скиллы:** `cad-drawings`, `gdal`, `geopandas`, `image-compare`, `leaflet`, `proj`, `pyqgis`, `qgis-process`, `shapely`.
 
-**[Исследования и работа с продуктом](product-research.md)** — восемь скиллов с проверками на учебных сценариях. [ZIP 1.0.0](downloads/workflow-kit-product-research-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-product-research-1.0.0.zip.sha256)
+[Карточка набора](cad-geo.md) · [ZIP 1.1.0](downloads/workflow-kit-cad-geo-1.1.0.zip) · [SHA-256](downloads/workflow-kit-cad-geo-1.1.0.zip.sha256)
 
-**[Интерфейсы и сайты](sites.md)** — пять скиллов с учебными проверками. [ZIP 1.1.0](downloads/workflow-kit-sites-1.1.0.zip) · [Контрольная сумма](downloads/workflow-kit-sites-1.1.0.zip.sha256)
+### Документы, PDF и таблицы
 
-**[Презентации и мультимедиа](media.md)** — четыре проверенных скилла. [ZIP 1.0.0](downloads/workflow-kit-media-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-media-1.0.0.zip.sha256)
+Перевести документ в Markdown, обработать таблицу в LibreOffice Calc или проверить формулы в Excel.
 
-**[Документы, PDF и таблицы](documents.md)** — три проверенных скилла. [ZIP 1.0.1](downloads/workflow-kit-documents-1.0.1.zip) · [Контрольная сумма](downloads/workflow-kit-documents-1.0.1.zip.sha256)
+**Скиллы:** `doc-to-markdown`, `libreoffice-calc`, `spreadsheet-auditor`.
 
-**[Чертежи и геоданные в Codex](cad-geo.md)** — 9 проверенных скиллов. [ZIP 1.1.0](downloads/workflow-kit-cad-geo-1.1.0.zip) · [Контрольная сумма](downloads/workflow-kit-cad-geo-1.1.0.zip.sha256)
+[Карточка набора](documents.md) · [ZIP 1.0.1](downloads/workflow-kit-documents-1.0.1.zip) · [SHA-256](downloads/workflow-kit-documents-1.0.1.zip.sha256)
 
-[Проверка проектов в Codex, ZIP 1.0.0](downloads/workflow-kit-project-review-1.0.0.zip) · [Контрольная сумма](downloads/workflow-kit-project-review-1.0.0.zip.sha256)
+### Русские тексты и встречи
 
-В архиве Idea Storm, Multi-Layer Review, Project Audit и Agent Eval с инструкцией по установке в один проект. Codex CLI обнаружил все четыре после распаковки и копирования в учебный проект. Agent Eval обработал вымышленный экспорт из этой копии. Запуск в окне Desktop в этой проверке не проводился.
+Вычитать русский текст, составить протокол встречи и выделить решения из расшифровки.
+
+**Скиллы:** `human-text`, `ru-text`, `ru-writing`, `meeting-minutes-taker`, `meeting-insights-analyzer`.
+
+[Карточка набора](text-meetings.md) · [ZIP 1.0.0](downloads/workflow-kit-text-meetings-1.0.0.zip) · [SHA-256](downloads/workflow-kit-text-meetings-1.0.0.zip.sha256)
+
+### Презентации и мультимедиа
+
+Собрать презентацию, превратить схему Mermaid в изображение или подготовить видео.
+
+**Скиллы:** `ppt-creator`, `mermaid-tools`, `lottie`, `youtube-downloader`.
+
+[Карточка набора](media.md) · [ZIP 1.0.0](downloads/workflow-kit-media-1.0.0.zip) · [SHA-256](downloads/workflow-kit-media-1.0.0.zip.sha256)
+
+### Интерфейсы и сайты
+
+Спроектировать структуру сайта, выбрать оформление и проверить веб-интерфейс.
+
+**Скиллы:** `site-architecture`, `ui-ux-pro-max`, `webapp-testing`, `algorithmic-art`, `design-first`.
+
+[Карточка набора](sites.md) · [ZIP 1.1.0](downloads/workflow-kit-sites-1.1.0.zip) · [SHA-256](downloads/workflow-kit-sites-1.1.0.zip.sha256)
+
+### Исследования и работа с продуктом
+
+Изучить потребности клиентов, проверить идею, подобрать цену или спланировать запуск.
+
+**Скиллы:** `deep-research`, `customer-research`, `product-check`, `analytics`, `ab-testing`, `pricing`, `marketing-plan`, `launch`.
+
+[Карточка набора](product-research.md) · [ZIP 1.0.0](downloads/workflow-kit-product-research-1.0.0.zip) · [SHA-256](downloads/workflow-kit-product-research-1.0.0.zip.sha256)
+
+### Проверка проектов
+
+Сравнить варианты решения, проверить ТЗ или структуру проекта, разобрать экспорт сессии Codex.
+
+**Скиллы:** `idea-storm`, `multi-layer-review`, `project-audit`, `agent-eval`.
+
+[ZIP 1.0.0](downloads/workflow-kit-project-review-1.0.0.zip) · [SHA-256](downloads/workflow-kit-project-review-1.0.0.zip.sha256)
+
+### Сопровождение проектов
+
+Разобраться с ошибкой, проверить код и тесты, вести ветки Git и подготовить список изменений.
+
+**Скиллы:** `changelog-generator`, `codex-windows-doctor`, `context-degradation`, `file-organizer`, `finishing-a-development-branch`, `python-testing-patterns`, `receiving-code-review`, `security-best-practices`, `security-threat-model`, `systematic-debugging`, `test-driven-development`, `using-git-worktrees`, `verification-before-completion`.
+
+[Карточка набора](project-maintenance.md) · [ZIP 1.0.0](downloads/workflow-kit-project-maintenance-1.0.0.zip) · [SHA-256](downloads/workflow-kit-project-maintenance-1.0.0.zip.sha256)
+
+### Скиллы, MCP и инструменты
+
+Создать или проверить скилл, собрать MCP-сервер или спроектировать команды для агента.
+
+**Скиллы:** `mcp-builder`, `skill-conductor`, `skill-eval`, `tool-design`.
+
+[Карточка набора](skill-tools.md) · [ZIP 1.0.0](downloads/workflow-kit-skill-tools-1.0.0.zip) · [SHA-256](downloads/workflow-kit-skill-tools-1.0.0.zip.sha256)
+
+### Генеалогия
+
+Искать семейные документы, сопоставлять архивные записи и оформлять доказательства родственных связей.
+
+**Скиллы:** `ex-ussr-kinship-research`.
+
+[Карточка набора](kinship.md) · [ZIP 1.0.0](downloads/workflow-kit-kinship-1.0.0.zip) · [SHA-256](downloads/workflow-kit-kinship-1.0.0.zip.sha256) · [Family Tree Starter](https://github.com/KatariNa-codex/family-tree-starter)
+
+## Скиллы по ссылкам на исходники
+
+`transcribe`, `speech`, `site-audit` и `gh-fix-ci` доступны у авторов. Для `video-by-code` и `reels-console` в указателе также даны ссылки на исходники. [Ссылки в указателе скиллов](skills-by-topic.md).
 
 ## Скиллы из этого репозитория
 
