@@ -2,7 +2,7 @@
 
 В наборе 9 скиллов для чертежей, геометрии и карт. Можно установить один или несколько скиллов в учебный или рабочий проект.
 
-[Скачать ZIP](downloads/workflow-kit-cad-geo-1.1.0.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-cad-geo-1.1.0.zip.sha256)
+[Скачать ZIP](downloads/workflow-kit-cad-geo-1.1.1.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-cad-geo-1.1.1.zip.sha256)
 
 ## Установить
 

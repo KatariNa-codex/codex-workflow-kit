@@ -2,7 +2,7 @@
 
 Шесть скиллов для презентаций, диаграмм, анимации и работы с разрешённым видео.
 
-[Скачать ZIP 1.2.0](downloads/workflow-kit-media-1.2.0.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-media-1.2.0.zip.sha256)
+[Скачать ZIP 1.2.1](downloads/workflow-kit-media-1.2.1.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-media-1.2.1.zip.sha256)
 
 ## Установить
 

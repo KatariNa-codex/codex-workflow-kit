@@ -29,4 +29,4 @@ is used. Writes to `/output/`.
 
 **Not my work.** By daymade — [daymade/claude-code-skills](https://github.com/daymade/claude-code-skills), `daymade-docs/ppt-creator/`
 
-MIT. Full licence text: [`../licenses/`](../licenses/). Prefer installing from upstream — that copy is maintained, this one is a snapshot.
+MIT. Full licence text: [LICENSE](LICENSE). Prefer installing from upstream — that copy is maintained, this one is a snapshot.

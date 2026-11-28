@@ -2,7 +2,7 @@
 
 Три скилла для преобразования документов и проверки таблиц. Human Text входит в [«Русские тексты и встречи»](text-meetings.md).
 
-[Скачать ZIP](downloads/workflow-kit-documents-1.0.1.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-documents-1.0.1.zip.sha256).
+[Скачать ZIP](downloads/workflow-kit-documents-1.0.2.zip) · [Контрольная сумма SHA-256](downloads/workflow-kit-documents-1.0.2.zip.sha256).
 
 ## Установить
 

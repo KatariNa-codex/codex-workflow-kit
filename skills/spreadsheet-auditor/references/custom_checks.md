@@ -5,6 +5,8 @@ The Spreadsheet Auditor runs *checks* registered in
 detector is a three-step exercise: subclass `Check`, decorate it with
 `@register`, drop the module into the package.
 
+Use the upstream checkout linked below to update the seeded benchmark and regenerate its artifacts.
+
 ## Anatomy of a check
 
 ```python
@@ -73,9 +75,9 @@ class MyHardcodedYearCheck(Check):
 1. Add a row to [`references/check_catalog.md`](check_catalog.md) describing
    the new rule ID, severity, and short rationale.
 2. If you want the check to be benchmark-tracked, add a seeded entry to
-   [`benchmarks/seeded_defects.json`](../benchmarks/seeded_defects.json) and a
+   [`benchmarks/seeded_defects.json`](https://github.com/petehottelet/spreadsheet-auditor/blob/9930ae779c68f05cdd7520092bcad5aa2c4c497b/benchmarks/seeded_defects.json) and a
    matching defect in
-   [`scripts/create_seeded_corpus.py`](../scripts/create_seeded_corpus.py).
+   [`scripts/create_seeded_corpus.py`](https://github.com/petehottelet/spreadsheet-auditor/blob/9930ae779c68f05cdd7520092bcad5aa2c4c497b/scripts/create_seeded_corpus.py).
 3. Add a unit test under `tests/` exercising both positive and negative cases.
 
 ## Running just your check

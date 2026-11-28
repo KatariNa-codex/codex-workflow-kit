@@ -133,7 +133,7 @@ approval and sandbox controls.
 - Preflight checks archive structure and uncompressed size to reduce
   zip-bomb risk, and never overwrites the source workbook.
 
-See [`SECURITY.md`](../SECURITY.md) for the full threat model.
+See [`SECURITY.md`](https://github.com/petehottelet/spreadsheet-auditor/blob/9930ae779c68f05cdd7520092bcad5aa2c4c497b/SECURITY.md) for the full threat model.
 
 ## Heuristic vs deterministic
 

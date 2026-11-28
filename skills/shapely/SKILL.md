@@ -402,7 +402,7 @@ shapely/
 
 - **geopandas** — 基于 Shapely 的矢量数据分析库：[../geopandas/SKILL.md](../geopandas/SKILL.md)
 - **pyqgis** — QGIS Python 绑定（也使用 GEOS/QgsGeometry）：[../pyqgis/SKILL.md](../pyqgis/SKILL.md)
-- **jts** — Java 几何计算（Shapely 的 GEOS 底层是 JTS 的 C++ 移植）：[../jts/SKILL.md](../jts/SKILL.md)
+- **jts** — Java 几何计算（Shapely 的 GEOS 底层是 JTS 的 C++ 移植）：[JTS Topology Suite](https://locationtech.github.io/jts/)
 - **gdal** — 命令行数据处理：[../gdal/SKILL.md](../gdal/SKILL.md)
 
 ---

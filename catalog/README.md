@@ -26,7 +26,7 @@
 
 **Скиллы:** `cad-drawings`, `gdal`, `geopandas`, `image-compare`, `leaflet`, `proj`, `pyqgis`, `qgis-process`, `shapely`.
 
-[Карточка набора](cad-geo.md) · [ZIP 1.1.0](downloads/workflow-kit-cad-geo-1.1.0.zip) · [SHA-256](downloads/workflow-kit-cad-geo-1.1.0.zip.sha256)
+[Карточка набора](cad-geo.md) · [ZIP 1.1.1](downloads/workflow-kit-cad-geo-1.1.1.zip) · [SHA-256](downloads/workflow-kit-cad-geo-1.1.1.zip.sha256)
 
 ### Документы, PDF и таблицы
 
@@ -34,7 +34,7 @@
 
 **Скиллы:** `doc-to-markdown`, `libreoffice-calc`, `spreadsheet-auditor`.
 
-[Карточка набора](documents.md) · [ZIP 1.0.1](downloads/workflow-kit-documents-1.0.1.zip) · [SHA-256](downloads/workflow-kit-documents-1.0.1.zip.sha256)
+[Карточка набора](documents.md) · [ZIP 1.0.2](downloads/workflow-kit-documents-1.0.2.zip) · [SHA-256](downloads/workflow-kit-documents-1.0.2.zip.sha256)
 
 ### Русские тексты и встречи
 
@@ -50,7 +50,7 @@
 
 **Скиллы:** `ppt-creator`, `mermaid-tools`, `lottie`, `youtube-downloader`, `video-by-code`, `reels-console`.
 
-[Карточка набора](media.md) · [ZIP 1.2.0](downloads/workflow-kit-media-1.2.0.zip) · [SHA-256](downloads/workflow-kit-media-1.2.0.zip.sha256)
+[Карточка набора](media.md) · [ZIP 1.2.1](downloads/workflow-kit-media-1.2.1.zip) · [SHA-256](downloads/workflow-kit-media-1.2.1.zip.sha256)
 
 ### Интерфейсы и сайты
 
