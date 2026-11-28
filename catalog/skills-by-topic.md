@@ -26,6 +26,7 @@
 - **human-text** — [Workflow Kit](../skills/human-text/) · [Лицензия](../skills/human-text/LICENSE) · [Изменения](../skills/human-text/CHANGES.md)
 - **ru-text** — [Workflow Kit](../skills/ru-text/) · [Лицензия](../skills/ru-text/LICENSE) · [Изменения](../skills/ru-text/CHANGES.md)
 - **ru-writing** — [Workflow Kit](../skills/ru-writing/) · [Лицензия](../skills/ru-writing/LICENSE) · [Изменения](../skills/ru-writing/CHANGES.md)
+- **humanizer-ru** — [Скилл](../skills/humanizer-ru/) · [Порядок применения](text-meetings.md#черновик-редактура-и-вычитка) · [Лицензия](../skills/humanizer-ru/LICENSE).
 - **meeting-insights-analyzer** — [Workflow Kit](../skills/meeting-insights-analyzer/) · [Лицензия](../skills/meeting-insights-analyzer/LICENSE) · [Изменения](../skills/meeting-insights-analyzer/CHANGES.md)
 - **meeting-minutes-taker** — [Workflow Kit](../skills/meeting-minutes-taker/) · [Лицензия](../skills/meeting-minutes-taker/LICENSE) · [Изменения](../skills/meeting-minutes-taker/CHANGES.md)
 - **transcribe** — [Исходник](https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/transcribe)
@@ -36,6 +37,8 @@
 - **youtube-downloader** — [Workflow Kit](../skills/youtube-downloader/) · [Лицензия](../skills/youtube-downloader/LICENSE) · [Изменения](../skills/youtube-downloader/CHANGES.md)
 
 ## Интерфейсы и сайты
+
+- **Скиллы Эмиля Ковальски** — [Все 20 скиллов, установка и порядок работы](kowalski.md).
 
 - **design-first** — [Workflow Kit](../skills/design-first/) · [Лицензия](../skills/design-first/LICENSE) · [Изменения](../skills/design-first/CHANGES.md) · [Исходник](https://github.com/GuruDevvv/my-claude-skills/tree/b5c44a9b7ec4a2620d7c7824cc4df22b940ae6dd/mine/design-first)
 - **algorithmic-art** — [Workflow Kit](../skills/algorithmic-art/) · [Лицензия](../skills/algorithmic-art/LICENSE) · [Изменения](../skills/algorithmic-art/CHANGES.md)
